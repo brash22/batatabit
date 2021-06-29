@@ -27,6 +27,7 @@ html {
     font-family: 'DM Sans', sans-serif;
     scroll-behavior: smooth;
 }
+/* Header */
 header {
     position: relative;
     display: flex;
@@ -93,11 +94,13 @@ header img {
     background-image: url('../assets/icons/down-arrow.svg');
 }
 
+/* Main */
 main {
     width: 100%;
     height: auto;
     background-color: var(--off-white);
 }
+/* Primera seccion del main */
 .main-exchange-container {
     width: 100%;
     height: auto;
@@ -135,6 +138,7 @@ main {
     line-height: 1.6rem;
     color: #757575;
 }
+/* Primera tabla de la primera sección */
 .main-currency-table {
     width: 70%;
     min-width: 235px;
@@ -222,7 +226,7 @@ main {
     color: var(--warm-black);
     font-weight: 300;
 }
-/* Segunda Tabla */
+/* Segunda Tabla de la primera sección */
 .main-commissions-table {
     width: 70%;
     min-width: 235px;
@@ -330,7 +334,7 @@ main {
     line-height: 1.8rem;
     color: #808080;
 }
-/* Estilos de la tarjeta */
+/* Estilos de la tarjeta de la segunda sección */
 .product-detail--card {
     width: 90%;
     min-width: 288px;
@@ -395,3 +399,5 @@ main {
     line-height: 2.6rem;
     color: var(--just-white);
 }
+
+/* Cuarta sección del main */
