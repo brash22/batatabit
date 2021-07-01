@@ -401,3 +401,229 @@ main {
 }
 
 /* Cuarta sección del main */
+.main-plans-container {
+    width: 100%;
+    min-width: 320px;
+    padding-bottom: 70px;
+    text-align: center;
+}
+.plans--title {
+    width: 90%;
+    min-width: 288px;
+    height: auto;
+    margin: 0 auto;
+    padding: 65px 0;
+}
+.plans--title h2 {
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+    color: var(--black);
+}
+.plans--title p {
+    padding-top: 30px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: #757575;
+}
+
+/* Estilos de tarjetas */
+.plans-container--slider {
+    display: flex;
+    height: 316px;
+    overflow: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+    gap: 20px;
+}
+
+.plans-container--card {
+    scroll-snap-align: center;
+    position: relative;
+    width: 70%;
+    min-width: 230px;
+    max-width: 300px;
+    height: 250px;
+    margin: 50px auto 0px;
+    padding: 0% 15px;
+    background-color: var(--just-white);
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(89, 73, 30, 0.16);
+}
+.plans-container--card .limited {
+    position: absolute;
+    top: -15px;
+    left: calc(50% - 50px);
+    width: 102px;
+    height: 31px;
+    font-family: 'Inter', sans-serif;
+    background-color: var(--secundary-blue);
+    color: var(--just-white);
+    font-size: 1.2rem;
+    padding: 6px;
+    border-radius: 8px;
+}
+.plan-card--li {
+    margin: 25px auto 0;
+    width: 151px;
+    height: 48px;
+    border-radius: 4px;
+    border: 2px solid  var(--secundary-blue);
+    background-color: var(--off-white);
+    color:var(--warm-black);
+    font-size: 1.4rem;
+    font-weight: bold;
+    line-height: 1.8rem;
+    font-family: 'DM Sans', sans-serif;
+}
+.plan-card--li span {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    margin-left: 10px;
+    background-image: url(../assets/icons/right-blue-arrow.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    vertical-align: middle;
+}
+
+.plans-container--card .recommended {
+    position: absolute;
+    order: 2;
+    top: -15px;
+    left: calc(50% - 50px);
+    width: 102px;
+    height: 31px;
+    font-family: 'Inter', sans-serif;
+    background-color: var(--bitcoin-orange);
+    color: var(--just-white);
+    font-size: 1.2rem;
+    padding: 6px;
+    border-radius: 8px;
+}
+.plan-card--title {
+    padding-top: 30px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: #000000;
+}
+.plan-card--price {
+    padding: 5px 0;
+    font-size: 5.2rem;
+    font-weight: bold;
+    line-height: 5.3rem;
+    color: black;
+}
+.plan-card--price span {
+    font-size: 1.2rem;
+    font-weight: 300;
+    position: absolute;
+    left: 31%;
+    top: 16%;
+}
+.plan-card--saving {
+    font-size: 1.3rem;
+    color: #757575;
+    padding: 8px 8px 0;
+}
+.plan-card--ca {
+    margin: 25px auto 0;
+    width: 151px;
+    height: 48px;
+    border-radius: 4px;
+    border: 2px solid  var(--bitcoin-orange);
+    background-color: var(--off-white);
+    color:var(--warm-black);
+    font-size: 1.4rem;
+    font-weight: bold;
+    line-height: 1.8rem;
+    font-family: 'DM Sans', sans-serif;
+}
+.plan-card--ca span {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    margin-left: 10px;
+    background-image: url(../assets/icons/orange-right-arrow.svg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    vertical-align: middle;
+}
+
+
+.plans-container--card-black {
+    position: relative;
+    scroll-snap-align: center;
+    width: 70%;
+    min-width: 230px;
+    max-width: 300px;
+    height: 250px;
+    margin: 50px auto 0px;
+    padding: 0% 15px;
+    background-color: var(--warm-black);
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(89, 73, 30, 0.16);
+    order: 3;
+}
+.plans-container--card-black .unlimited {
+    position: absolute;
+    top: -15px;
+    left: calc(50% - 50px);
+    width: 102px;
+    height: 31px;
+    font-family: 'Inter', sans-serif;
+    background-color: #282623;
+    box-shadow: 0 1px 4px rgba(255, 255, 255, 0.5);
+    border: 2px solid  var(--bitcoin-orange);
+    color: var(--just-white);
+    font-size: 1.2rem;
+    padding: 6px;
+    border-radius: 8px;
+}
+.plans-container--card-black .color-change {
+    color: var(--just-white);
+}
+.plan-card--price-black  {
+    padding: 5px 0;
+    font-size: 5.2rem;
+    font-weight: bold;
+    line-height: 5.3rem;
+    color: black;
+}
+.plan-card--price-black span {
+    font-size: 1.2rem;
+    font-weight: 300;
+    position: absolute;
+    left: 25%;
+    top: 16%;
+}
+.plan-card--un {
+    margin: 25px auto 0;
+    width: 151px;
+    height: 48px;
+    border-radius: 4px;
+    border: 2px solid  var(--bitcoin-orange);
+    box-shadow: 0 1px 4px rgba(255, 255, 255, 0.5);
+    background-color:#282623;
+    color:var(--just-white);
+    font-size: 1.4rem;
+    font-weight: bold;
+    line-height: 1.8rem;
+    font-family: 'DM Sans', sans-serif;
+}
+.plan-card--un span {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    margin-left: 10px;
+    background-image: url(../assets/icons/orange-right-arrow.svg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    vertical-align: middle;
+}
+
